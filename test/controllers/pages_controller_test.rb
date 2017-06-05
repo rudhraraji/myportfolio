@@ -6,13 +6,13 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get education" do
-    get pages_education_url
+ test "should get experience" do
+    get pages_experience_url
     assert_response :success
   end
 
-  test "should get experience" do
-    get pages_experience_url
+  test "should get education" do
+    get pages_education_url
     assert_response :success
   end
 
