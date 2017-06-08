@@ -245,12 +245,6 @@ content: "\2014 \2009";
 /*Social Icons*/
 
 /* Button Style */
-
-.socialButtons{
-   
-}
-
-
 .btn-block{
   font-size: 14px;
 text-transform: uppercase;
@@ -267,8 +261,13 @@ text-transform: uppercase;
     
        
 }
-.linkbtn .socialButtons .btn-linkedin , .linkbtn .socialButtons .btn-download, .linkbtn .socialButtons .btn-bitbucket { color:#333;}
-/*.linkbtn .socialButtons .btn-download {background: #00aced;}
+.linkbtn .socialButtons .btn-linkedin , .linkbtn .socialButtons .btn-docx, .linkbtn .socialButtons .btn-pdf, .linkbtn .socialButtons .btn-zip, .linkbtn .socialButtons .btn-github  { color:#333;}
+
+/*
+.linkbtn .socialButtons .btn-docx {background: #00aced;}
+.linkbtn .socialButtons .btn-pdf {background: #00aced;}
+.linkbtn .socialButtons .btn-zip {background: #00aced;}
+.linkbtn .socialButtons .btn-github {background: #00aced;}
 .linkbtn .socialButtons .btn-bitbucket {background: #c32f10;}*/
 
 
@@ -291,7 +290,7 @@ text-transform: uppercase;
   margin-top: 0px !important;
   margin-bottom: 0px !important;
 }
-.linkbtn .loginOr .spanOr {
+.linkbtn  {
   display: block;
   position: absolute;
   left: 50%;

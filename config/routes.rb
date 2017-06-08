@@ -1,7 +1,14 @@
 Rails.application.routes.draw do
-  
+
   	root 'pages#home'
-	get 'education' => 'pages#education', as: :education
-	get 'experience' => 'pages#experience', as: :experience
-	get 'contact' => 'pages#contact', as: :contact
+	get 'skills', to: 'pages#skills'
+	get 'experience', to:'pages#experience'
+	get 'portfolio', to: 'pages#portfolio'
+	get 'contact', to: 'pages#contact'
+	get 'doc', to: 'pages#doc'
+	get 'zip', to: 'pages#zip'
+	get 'pdf', to: 'pages#pdf'
+
+# For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
+

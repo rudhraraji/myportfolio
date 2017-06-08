@@ -1,23 +1,49 @@
 require 'test_helper'
 
 class PagesControllerTest < ActionDispatch::IntegrationTest
+ 
   test "should get home" do
-    get pages_home_url
+    get '/'
     assert_response :success
   end
 
- test "should get experience" do
-    get pages_experience_url
+  test "should get home" do
+    get home_path
     assert_response :success
   end
 
-  test "should get education" do
-    get pages_education_url
+  test "should get skills" do
+    get skills_path
     assert_response :success
   end
 
+  test "should get experience" do
+    get experience_path
+    assert_response :success
+  end
+
+  test "should get portfolio" do
+    get portfolio_path
+    assert_response :success
+  end
+  
   test "should get contact" do
-    get pages_contact_url
+    get contact_path
+    assert_response :success
+  end
+
+  test "should get pdf" do
+    get pdf_path
+    assert_response :success
+  end
+
+  test "should get doc" do
+    get doc_path
+    assert_response :success
+  end
+
+  test "should get zip" do
+    get zip_path
     assert_response :success
   end
 

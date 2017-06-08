@@ -2,35 +2,40 @@
   <div class="board-inner">
     <ul class="nav nav-tabs" id="myTab">
       <div class="liner"></div>
-      <li class="active">
-        <a href="#home" data-toggle="tab" title="welcome">
+      <li class="active"><%= link_to ('<span class="round-tabs one"><i class="glyphicon glyphicon-user"></i></span>').html_safe, root_path, :class=> "round-tabs one", title: ''%></li>
+      <li><%= link_to ('<span class="round-tabs two"><i class="glyphicon glyphicon-stats"></i></span>').html_safe, skills_path, :class=> "round-tabs two tab", title: ''%></li>
+      <li><%= link_to ('<span class="round-tabs three"><i class="glyphicon glyphicon-education"></i></span> ').html_safe, experience_path, :class=> "round-tabs three", title: '' %></li>
+       <li><%= link_to ('<span class="round-tabs four"><i class="glyphicon glyphicon-th"></i></span>').html_safe, portfolio_path, :class=> "round-tabs four", title: '' %></li>
+      <li><%= link_to ('<span class="round-tabs five"><i class="glyphicon glyphicon-envelope"></i></span>').html_safe, contact_path, :class=> "round-tabs five" , title: '' %></li>
+      <!-- <li class="active">
+        <a href="home" data-toggle="tab" title="welcome">
         <span class="round-tabs one">
         <i class="glyphicon glyphicon-user"></i>
         </span> 
         </a>
       </li>
-      <li><a href="#profile" data-toggle="tab" title="profile">
+      <li><a href="skills" data-toggle="tab" title="profile">
         <span class="round-tabs two">
         <i class="glyphicon glyphicon-stats"></i>
         </span> 
         </a>
       </li>
-      <li><a href="#messages" data-toggle="tab" title="bootsnipp goodies">
+      <li><a href="experience" data-toggle="tab" title="bootsnipp goodies">
         <span class="round-tabs three">
           <i class="glyphicon glyphicon-education"></i>
         </span> </a>
       </li>
-      <li><a href="#settings" data-toggle="tab" title="blah blah">
+      <li><a href="portfolio" data-toggle="tab" title="blah blah">
         <span class="round-tabs four">
           <i class="glyphicon glyphicon-th"></i>
         </span> 
         </a>
       </li>
-      <li><a href="#doner" data-toggle="tab" title="completed">
+      <li><a href="contact" data-toggle="tab" title="completed">
         <span class="round-tabs five">
         <i class="glyphicon glyphicon-envelope"></i>
         </span> </a>
-      </li>
+      </li> -->
     </ul>
   </div>
 </div>
