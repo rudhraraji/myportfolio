@@ -3,6 +3,8 @@
 @import "font-awesome";
 @import "navbar";
 @import "home";
+@import "skills";
+
 
  @font-face {
  font-family:"Prosto";
@@ -56,13 +58,13 @@ body{margin:1%;padding:0px;font-family:Prosto,Arial;font-size:12px}
   max-width: 220px;
   background-color: black;
   float: left;
-  height: 95%;
+  height: 85vh;
   position: relative;
   overflow: hidden;
 }
 
 #main {
-  height: 95%;
+  height: 85vh;
   overflow-y: auto;
   overflow-x: hidden;
   background-color: white;

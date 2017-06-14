@@ -30,3 +30,11 @@ $(document).scroll(function() {
     "position": $(this).scrollTop() > 140 ? "fixed" : "relative"
   });
 });
+
+jQuery(document).ready(function(){
+	jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},6000);
+	});
+});
