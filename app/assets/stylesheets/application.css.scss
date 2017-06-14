@@ -4,17 +4,14 @@
 @import "navbar";
 @import "home";
 @import "skills";
-
-
- @font-face {
- font-family:"Prosto";
- src:url("font/Prosto.eot?") format("eot");
- src:url("font/Prosto.woff") format("woff"),url("font/Prosto.ttf") format("truetype"),url("font/ProstoOne-Regular.ttf") format("truetype"),url("font/Prosto.svg#Prosto") format("svg");
- src:url("font/Prosto Sans Bold.otf") format("otf");
- font-weight:normal;
- font-style:normal;
- }
-
+@font-face {
+  font-family: "Prosto";
+  src: url("font/Prosto.eot?") format("eot");
+  src: url("font/Prosto.woff") format("woff"), url("font/Prosto.ttf") format("truetype"), url("font/ProstoOne-Regular.ttf") format("truetype"), url("font/Prosto.svg#Prosto") format("svg");
+  src: url("font/Prosto Sans Bold.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body,
 html {
@@ -30,11 +27,16 @@ html {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3498db', endColorstr='#3498db', GradientType=1);
 }
 
-body{margin:1%;padding:0px;font-family:Prosto,Arial;font-size:12px} 
+body {
+  margin: 1%;
+  padding: 0px;
+  font-family: Prosto, Arial;
+  font-size: 12px
+}
 
 .row-offcanvas {
   height: 85vh;
-  background-color:#000;
+  background-color: #000;
 }
 
 #brand {
@@ -45,9 +47,10 @@ body{margin:1%;padding:0px;font-family:Prosto,Arial;font-size:12px}
   position: relative;
 }
 
-.space{
-  margin:15px 0px;
+.space {
+  margin: 15px 0px;
 }
+
 #navi {
   overflow: hidden;
 }
@@ -68,8 +71,8 @@ body{margin:1%;padding:0px;font-family:Prosto,Arial;font-size:12px}
   overflow-y: auto;
   overflow-x: hidden;
   background-color: white;
-  padding:5px;
-  padding-left:15px;
+  padding: 5px;
+  padding-left: 15px;
 }
 
 .nomargin {
@@ -131,6 +134,7 @@ body{margin:1%;padding:0px;font-family:Prosto,Arial;font-size:12px}
   color: white;
 }
 
+
 /*
 .h3txt{
   color:#3498DB;
@@ -147,8 +151,6 @@ body{margin:1%;padding:0px;font-family:Prosto,Arial;font-size:12px}
 
 
 /* End of sidebar */
-
-
 
 
 /*
