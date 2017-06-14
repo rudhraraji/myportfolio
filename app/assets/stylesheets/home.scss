@@ -219,7 +219,7 @@ content: "\2014 \2009";
 
 
 /* Skill bar */
-.progress {
+/*.progress {
     position: relative;
 	height: 25px;
 }
@@ -240,7 +240,7 @@ content: "\2014 \2009";
 
 .wp-bar{
 	background-color: #f0df26;
-}
+}*/
 /*End of Intro */
 /*Social Icons*/
 
@@ -278,10 +278,8 @@ text-transform: uppercase;
   font-size: 1.5px;
   color: #aaa;
   text-align: center;
-  min-height:150px;
-  margin-top: 5%;
- /* margin-bottom: 5%;*/
- 
+  min-height:90px;
+  margin: 5%; 
 }
 /*
 .linkbtn {
@@ -318,7 +316,7 @@ text-transform: uppercase;
   width: 100%;
   float: left;
   color: #FFF;
-  min-height: 200px;
+  min-height: 175px;
   text-align: center;
   padding: 15px;
   margin-bottom: 20px;
@@ -326,15 +324,15 @@ text-transform: uppercase;
 }
 
 .block-1{
-  background-color: #94C83C
+  background-color: #94C83C;
 }
 
 .block-2{
-  background-color: #F36E20
+  background-color: #F36E20;
 }
 
 .block-3{
-  background-color: #3498DB
+  background-color: #3498DB;
 }
 
 .block-4{ 
