@@ -6,10 +6,10 @@ class PagesController < ApplicationController
   def skills
   end
 
-  def experience
+  def education
   end
 
-  def education
+  def experience
   end
 
   def portfolio

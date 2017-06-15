@@ -17,13 +17,13 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
-  test "should get experience" do
-    get experience_path
-    assert_response :success
-  end
-
   test "should get education" do
     get education_path
+    assert_response :success
+  end
+  
+  test "should get experience" do
+    get experience_path
     assert_response :success
   end
 
