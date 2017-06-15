@@ -2,7 +2,7 @@ require 'test_helper'
 
 class PagesControllerTest < ActionDispatch::IntegrationTest
  
-  test "should get home" do
+  test "should get root" do
     get '/'
     assert_response :success
   end
@@ -19,6 +19,11 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
 
   test "should get experience" do
     get experience_path
+    assert_response :success
+  end
+
+  test "should get education" do
+    get education_path
     assert_response :success
   end
 

@@ -9,6 +9,9 @@ class PagesController < ApplicationController
   def experience
   end
 
+  def education
+  end
+
   def portfolio
   end
 
