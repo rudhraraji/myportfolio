@@ -1,0 +1,68 @@
+.div-left{
+    float:left;
+    padding-left:10px;
+     margin-top: -17px;
+}
+.div-right{
+    float:right;
+    padding-right:10px;
+}
+.exppanel{
+    border:0px;
+    padding-right:1%;
+}
+.panel-heading.head{
+    height:54px;
+    background-color: #337ab7;
+}
+
+.panel .folded{
+    right:0px;
+}
+.panel .folded h2 {
+    background: #337ab7;
+   /* background-image: radial-gradient(transparent 30%, rgba(0, 0, 0, 0.2));*/
+    border: 0 solid #337ab7;
+    border-top-right-radius:5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    text-shadow: -1px -1px 1px rgba(0,0,0,0.2);
+}
+
+.folded:before, div.folded:after {
+    bottom: 26px;
+    content: "";
+    height: 28px;
+    position: absolute;
+    width: 48%;
+    z-index: -1;
+}
+.folded:before {
+    left: 2%;
+    transform: rotate(-3deg);
+}
+.folded:after {
+    right: 2%;
+    transform: rotate(3deg);
+}
+.panel .folded h2 {
+        border-left: 0px;
+    border-bottom-width: 3px;
+    margin: 0;
+    padding: 7px 43px;
+    position: absolute;
+    right: 2%;
+    margin-top: -10px;
+    background-color: #337ab7;
+}
+.folded h2:after {
+    border-width: 10px;
+    border-style: solid;
+    border-color: #134 transparent transparent #134;
+    bottom: -21px;
+    content: "";
+    position: absolute;
+    right: 0px;
+    }
