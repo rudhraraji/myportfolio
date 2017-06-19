@@ -7,9 +7,21 @@
     float:right;
     padding-right:10px;
 }
-.exppanel{
+.xppanel{
     border:0px;
     padding-right:1%;
+}
+p{
+    font-size:14px;
+}
+.imglogo{
+    float:right;
+    width:80%;
+}
+.xplist{
+    list-style: square;
+    font-size: 15px;
+    text-align: justify;
 }
 .panel-heading.head{
     height:54px;
@@ -66,3 +78,16 @@
     position: absolute;
     right: 0px;
     }
+.box {    
+    background:#d9dfe5;
+    border-radius: 5px;
+    margin:10px 0px;
+}
+.boxshadow{
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+.box h3{
+    position:relative;  
+}

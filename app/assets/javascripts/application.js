@@ -23,18 +23,4 @@ $(document).ready(function() {
 
 });
 
-$(document).scroll(function() {
-  //detect when user scroll to top and set position to relative else sets position to fixed
-  $("#sticky").css({
-    "top": "0",
-    "position": $(this).scrollTop() > 140 ? "fixed" : "relative"
-  });
-});
 
-jQuery(document).ready(function(){
-	jQuery('.skillbar').each(function(){
-		jQuery(this).find('.skillbar-bar').animate({
-			width:jQuery(this).attr('data-percent')
-		},6000);
-	});
-});
