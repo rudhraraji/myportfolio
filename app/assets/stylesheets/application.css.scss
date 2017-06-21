@@ -144,7 +144,7 @@ body {
   text-align:center;
 }
 
-.panel.blockemail{
+.panel.blockemail, .blockemail a{
   color:#fff;
   background-color:#F36E20;
 }
@@ -152,7 +152,7 @@ body {
 .email{
   color:#F36E20;
 }
-.panel.blockmobile{
+.panel.blockmobile, .blockmobile a{
   color:#fff;
   background-color:#7db701;
 }
@@ -160,15 +160,13 @@ body {
   color:#7db701;
 }
 
-/*
-.h3txt{
+.panel.blocksms, .blocksms a{
+  color:#fff;
+  background-color:#3498DB;
+}
+.sms{
   color:#3498DB;
 }
-
-.h4txt{
-  color:#7db701;
-}
-*/
 
 .h5txt {
   color: #3498DB;
