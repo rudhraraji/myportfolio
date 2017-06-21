@@ -1,11 +1,13 @@
+
+
 <div class="row-offcanvas row-offcanvas-left">
   <div class="row no-gutters">
     <div id="brand" class="sidebar-offcanvas">
-      <div class="col-md-12"> 
+      <div class="col-md-12">
         <div class="row text-center sidetxt">
-        <h3 class="h3txt"> Raji Rudhrakumar </h3>
-         <h4 class="h4txt"> Web/Rails/Wordpress Developer </h4>
-      </div>
+          <h3 class="h3txt"> Raji Rudhrakumar </h3>
+          <h4 class="h4txt"> Web/Rails/Wordpress Developer </h4>
+        </div>
       </div>
     </div>
     <div id="navi">
@@ -23,10 +25,33 @@
       <div class="row">
         <span class="image-overlay"> <%= link_to image_tag("photo.png" , alt: "Profile Pic", :class => "img img-circle profileimg") %></span>
       </div>
-      <div class="row text-center sidetxt">
-      <!--   <h3 class="h3txt"> Raji Rudhrakumar </h3>-->
-        <h4 class="h5txt"> <span class="fa fa-envelope"></span> rudhraraji@gmail.com </h4>
-        <h4 class="h5txt"> <span class="fa fa-phone"></span> 0421 355 709 </h4> 
+      <div class="row sideblock">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default blockemail">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+               <h1><span class="fa fa-envelope email"></span></h1>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <div class="panel-body"><p>rudhraraji@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default blockmobile">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"> <h1><span class="fa fa-phone mobile"></span></h1></a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse in">
+              <div class="panel-body"><p>0421 355 709</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -45,3 +70,4 @@
   </div>
 </div>
 <!--/row-offcanvas -->
+
