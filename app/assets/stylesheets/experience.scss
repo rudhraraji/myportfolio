@@ -1,8 +1,9 @@
 .div-left{
     float:left;
     padding-left:10px;
-     margin-top: -17px;
+    margin-top:0px;
 }
+
 .div-right{
     float:right;
     padding-right:10px;
@@ -23,9 +24,20 @@ p{
     font-size: 15px;
     text-align: justify;
 }
+.xpfooter{
+    background-color:#337ab7;
+    padding:0px 0px 0px 20px;
+    margin-right: -3px;
+    color: #fff;
+}
+.xpfooter p{
+    padding:3px;
+
+}
 .panel-heading.head{
     height:54px;
     background-color: #337ab7;
+    color: #fff;
 }
 
 .panel .folded{
