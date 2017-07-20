@@ -12,6 +12,3 @@ if Rails.env.production?
   end
 end
 
-#AccessKey = AKIAJPDLVCC7RNBTLISA
-#SecretKey = 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
-#S3Bucket  = rudhraraji
