@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.6.10'
+
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
@@ -23,6 +25,8 @@ gem 'coffee-rails', '~> 4.2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+# Fix Ruby 2.6 compatibility with ffi
+gem 'ffi', '~> 1.15.5'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -38,11 +42,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'autoprefixer-rails'
 gem "font-awesome-rails"
-#image uploader in AWS S3 bucket
+# Image uploader in AWS S3 bucket
 gem 'carrierwave',             '1.1.0'
 gem 'mini_magick',             '4.7.0'
-gem 'fog',                     '1.40.0'
-gem 'aws-sdk'
+gem 'fog-aws'
+gem 'aws-sdk-s3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
