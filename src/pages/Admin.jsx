@@ -125,7 +125,7 @@ function ProjectEditor({ p, n, total, onChange, onMove, onRemove }) {
 // Resume: upload new versions; every upload is kept in the history list below,
 // where any version can be downloaded, put back on the site, or deleted.
 const RESUME_TYPES = '.pdf,.doc,.docx';
-const MAX_RESUME_MB = 5;
+const MAX_RESUME_MB = 4; // Vercel limits uploads to 4.5 MB
 const kb = (bytes) => `${Math.max(1, Math.round(bytes / 1024))} KB`;
 const when = (iso) => new Date(iso).toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' });
 

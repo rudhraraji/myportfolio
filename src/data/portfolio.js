@@ -14,7 +14,7 @@ import auctionlights from '../assets/projects/auctionlights.jpg';
 
 export const profile = {
   name: 'Raji Rudhrakumar',
-  title: 'Senior Hybrid Test Analyst',
+  title: 'Automation Engineer',
   photo,
   email: 'rajirudhrakumar@gmail.com',
   phone: '0421 355 709',
