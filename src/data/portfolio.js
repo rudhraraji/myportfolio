@@ -31,7 +31,7 @@ export const rotatingSkills = [
   'Playwright', 'Tricentis Tosca','Appium', 'Selenium WebDriver', 'REST Assured',
   'GitHub Copilot', 'Claude', 'Cursor', 'Playwright MCP', 'AI Agents', 'LLM-based Testing', 'Prompt Engineering',
   'Postman', 'API Testing', 'Java', 'JavaScript', 'SQL', 'Cucumber (BDD)',
-  'Mobile Testing', 'Salesforce', 'Jira', 'Accessibility Testing', 'Agile',
+  'Mobile Testing', 'Salesforce', 'Jira', 'Accessibility Testing', 'CI/CD', 'Agile',
 ];
 
 // From the Summary and Experience sections of my resume.
