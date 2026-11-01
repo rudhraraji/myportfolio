@@ -11,6 +11,7 @@ import loxo from '../assets/projects/loxo.jpg';
 import rajiportfolio from '../assets/projects/rajiportfolio.jpg';
 import feathers from '../assets/projects/feathers.jpg';
 import auctionlights from '../assets/projects/auctionlights.jpg';
+import portfolioReact from '../assets/projects/portfolioReact.jpg';
 
 export const profile = {
   name: 'Raji Rudhrakumar',
@@ -28,6 +29,7 @@ export const profile = {
 // Key skills from the Skills table in my resume.
 export const rotatingSkills = [
   'Playwright', 'Tricentis Tosca','Appium', 'Selenium WebDriver', 'REST Assured',
+  'GitHub Copilot', 'Claude', 'Cursor', 'Playwright MCP', 'AI Agents', 'LLM-based Testing', 'Prompt Engineering',
   'Postman', 'API Testing', 'Java', 'JavaScript', 'SQL', 'Cucumber (BDD)',
   'Mobile Testing', 'Salesforce', 'Jira', 'Accessibility Testing', 'Agile',
 ];
