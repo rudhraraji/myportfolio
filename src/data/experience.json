@@ -1,0 +1,411 @@
+[
+  {
+    "role": "Sr. Hybrid Test Analyst",
+    "company": "NCS Australia",
+    "period": "July 2022 – September 2026",
+    "skills": "",
+    "responsibilities": [],
+    "projects": [
+      {
+        "name": "NCS – Playwright Test Automation Framework",
+        "period": "Oct 25 – Sep 26",
+        "url": "",
+        "description": "Project: SeleniumPlayground (GitHub Repo)",
+        "skills": "Playwright TypeScript, Visual Studio Code, GitHub, GitHub Copilot",
+        "items": [
+          "Built a maintainable end-to-end test automation framework using Playwright to validate web UI components, form interactions, navigation, and user workflows.",
+          "Developed reusable automated test cases with robust locators, assertions, fixtures, and test hooks to improve test reliability and maintainability.",
+          "Implemented cross-browser test execution and leveraged Playwright debugging capabilities, including traces, screenshots, and test reports.",
+          "Structured the automation suite following scalable test automation practices, with separation of test logic and reusable components.",
+          "Leveraged GitHub Copilot CLI as a development assistant for generating test scenarios, refactoring automation code, troubleshooting failures, and improving productivity."
+        ],
+        "links": []
+      },
+      {
+        "name": "RACV – IAG Insurance Integration",
+        "period": "Jun 26 – Aug 26",
+        "url": "",
+        "description": "",
+        "skills": "Postman, Salesforce, MuleSoft, JavaScript, REST APIs",
+        "items": [
+          "Designed and implemented a reusable Postman API automation framework, establishing a standardised approach to API integration testing.",
+          "Developed 35+ reusable automated Postman validation scripts covering data types, missing/null values, payload structures, and business rules, strengthening API quality and test coverage.",
+          "Achieved a 70% reduction in API testing effort by introducing automation, parameterised scripts, and reusable test assets.",
+          "Partnered with Salesforce, MuleSoft, and delivery teams to support end-to-end integration testing and improve traceability through Jira-linked test automation."
+        ],
+        "links": []
+      },
+      {
+        "name": "RACV – DERA App",
+        "period": "Sep 25 – May 26",
+        "url": "",
+        "description": "",
+        "skills": "Android & iOS mobile devices, Postman, iCAD, Salesforce, MDT (RACV device)",
+        "items": [
+          "Executed functional, regression, and integration testing across iOS, Android, Salesforce, iCAD, and MDT.",
+          "Validated mobile functionality, accessibility, connectivity, and device compatibility.",
+          "Tested Salesforce CRM workflows, data validation, and business process automation across integrated systems (iCAD, MDT and mobile).",
+          "Logged and tracked defects using detailed evidence and collaborated on resolution.",
+          "Supported UAT, production validation, and Agile release activities."
+        ],
+        "links": []
+      },
+      {
+        "name": "RACV – Mobile Responder & Auto Club via National Gateway",
+        "period": "Two short engagements (1 week each)",
+        "url": "",
+        "description": "",
+        "skills": "Mobile Responder (MR) device, iCAD, DERA app (RACV), Salesforce, SQL, Swagger, Postman",
+        "items": [
+          "Developed and executed functional and integration test cases for Mobile Responder and National Gateway workflows.",
+          "Validated APIs and response codes using Postman and Swagger, along with mapping configurations and SQL database updates.",
+          "Reported defects, supported defect analysis, and collaborated with stakeholders to resolve issues."
+        ],
+        "links": []
+      },
+      {
+        "name": "Hostplus – Mobile Testing",
+        "period": "Apr 24 – Sep 25",
+        "url": "",
+        "description": "",
+        "skills": "Android & iOS mobile devices, Appium, Java, Karate Framework, Postman, Selenium, JUnit, REST Assured, Maven, Cucumber, POM – API Automation Test",
+        "items": [
+          "Built and maintained Appium automation framework using Java for Android and iOS mobile applications.",
+          "Developed and executed API automation using Karate Framework, REST Assured, and Postman.",
+          "Implemented Karate API automation features, reusable test scenarios, assertions, test data, and validations.",
+          "Automated UI and API tests using Appium, Selenium, Karate, REST Assured, and Postman.",
+          "Implemented Cucumber BDD, POM, Maven, and JUnit frameworks.",
+          "Integrated test reporting using Allure and Extent Reports.",
+          "Collaborated with Agile teams to support CI/CD pipeline automation execution and continuous improvement of test quality."
+        ],
+        "links": []
+      },
+      {
+        "name": "Managed Service – Mobile Support",
+        "period": "Feb 23 – Apr 24",
+        "url": "",
+        "description": "",
+        "skills": "Android & iOS mobile devices, Xcode, Android Studio, Charles Proxy, Postman, Vysor, 5KPlayer, HTTP Toolkit",
+        "items": [
+          "Performed mobile testing across QA, Staging, UAT, and Production.",
+          "Executed accessibility testing to WCAG 2.1 AA standards.",
+          "Reported defects and performed UI and backend troubleshooting.",
+          "Tested Android and iOS applications using Charles Proxy and HTTP Toolkit.",
+          "Collaborated with developers to resolve production issues."
+        ],
+        "links": []
+      },
+      {
+        "name": "Telstra Health – Kyra Application",
+        "period": "Jul 22 – Jan 23",
+        "url": "",
+        "description": "",
+        "skills": "Tricentis Tosca, JIRA, Confluence, TestRail",
+        "items": [
+          "Designed and implemented automation framework using Tricentis Tosca.",
+          "Automated UI, API, FHIR (Fast Healthcare Interoperability Resources) and HL7 (Health Level Seven) test scenarios.",
+          "Created reusable Tosca modules and test assets.",
+          "Supported Agile delivery, test environment setup, and team mentoring.",
+          "Delivered PoC to validate framework scalability."
+        ],
+        "links": []
+      }
+    ]
+  },
+  {
+    "role": "Sr. Test Engineer",
+    "company": "Tech Mahindra Pty Ltd",
+    "period": "January 2022 – June 2022",
+    "skills": "",
+    "responsibilities": [],
+    "projects": [
+      {
+        "name": "NAB (National Australia Bank)",
+        "period": "",
+        "url": "",
+        "description": "",
+        "skills": "Postman, REST Assured, Azure, GitHub",
+        "items": [
+          "Developed API automation using Karate Framework, REST Assured, and Java.",
+          "Created and maintained reusable Karate API test scenarios, assertions, validations, and test data.",
+          "Executed manual API testing using Postman.",
+          "Managed automation source code using GitHub.",
+          "Participated in Agile ceremonies and collaborated closely with developers and QA teams."
+        ],
+        "links": []
+      }
+    ]
+  },
+  {
+    "role": "Consultant – Quality Engineering",
+    "company": "Deloitte Pty Ltd",
+    "period": "October 2021 – December 2021",
+    "skills": "Postman, Karate Framework, Azure, GitHub",
+    "responsibilities": [
+      "Developed API automation using Karate Framework and Java.",
+      "Executed API validation using Postman.",
+      "Created and maintained test cases from business requirements.",
+      "Managed code in GitHub and simulated APIs using Microcks."
+    ],
+    "projects": []
+  },
+  {
+    "role": "Automation Test Analyst",
+    "company": "Infosys Pty Ltd",
+    "period": "July 2020 – September 2021",
+    "skills": "Tricentis Tosca, Postman, PEGA, qTest, Comparator, Kafka, MongoDB, JIRA",
+    "responsibilities": [
+      "Designed and executed system and API test cases for PEGA applications.",
+      "Performed System Integration Testing and defect triage.",
+      "Reviewed test cases and mentored junior QA engineers.",
+      "Collaborated with developers and business analysts to resolve defects.",
+      "Supported critical project releases."
+    ],
+    "projects": []
+  },
+  {
+    "role": "Test Analyst",
+    "company": "Clinicion Pty Ltd",
+    "period": "Feb 2018 – Jun 2020",
+    "skills": "Visual Studio 2017, ASP.NET MVC 4, Web API, C#, Azure Data, NUnit, JIRA, HTML, CSS, Bootstrap, jQuery, GitHub, Bitbucket, Swagger",
+    "responsibilities": [
+      "Developed and executed manual and automated test cases.",
+      "Performed API, web and database testing, including Web API validation with Swagger."
+    ],
+    "projects": []
+  },
+  {
+    "role": "Tester / Web Developer",
+    "company": "12Three Pty Ltd",
+    "period": "Jul 2016 – Dec 2017",
+    "skills": "Selenium WebDriver, WordPress, Joomla, OpenCart, Drupal, Magento",
+    "responsibilities": [
+      "Performed manual and Selenium automation testing of web applications (WordPress, Joomla, Magento, OpenCart), including UI and cross-browser compatibility."
+    ],
+    "projects": [
+      {
+        "name": "Feathers",
+        "period": "",
+        "url": "https://www.feathers.com.au",
+        "description": "Website selling fashionable clothes built in Magento 2.0. Feathers has become one of Melbourne's most iconic fashion brands, guaranteeing the highest quality in every garment and a brand that is ever evolving.",
+        "skills": "Magento 2.0, HTML5, CSS3",
+        "items": [
+          "Set up the Magento Ves Shop theme from scratch in cPanel",
+          "Set up the layout and updated the content of the site",
+          "Performed search engine optimization"
+        ],
+        "links": []
+      },
+      {
+        "name": "Baw Baw Physicians",
+        "period": "",
+        "url": "http://12three.com.au/development/bawbawphysicians",
+        "description": "WordPress site for Baw Baw Physicians, who updated their website in WordPress.",
+        "skills": "WordPress, HTML, CSS",
+        "items": [
+          "Set up the theme from scratch in cPanel",
+          "Set up WordPress plugins in the admin",
+          "Performed search engine optimization"
+        ],
+        "links": []
+      },
+      {
+        "name": "Tile Rescue — Forster landing page",
+        "period": "",
+        "url": "http://www.forster.tilerescue.com.au",
+        "description": "WordPress e-commerce site for one of Australia's leading tile and grout cleaning and maintenance groups, including a landing page for each suburb.",
+        "skills": "WordPress, HTML5, CSS3, LESS/SASS",
+        "items": [
+          "Customized WordPress websites",
+          "Added WordPress plugins according to customers' needs",
+          "Performed browser compatibility testing",
+          "Performed search engine optimization"
+        ],
+        "links": []
+      },
+      {
+        "name": "Interhampers",
+        "period": "",
+        "url": "https://store.interhampers.com.au",
+        "description": "Magento 2.0 e-commerce website for the largest gift hamper manufacturer in Australia, updated as a responsive site shipping to multiple places.",
+        "skills": "Magento, HTML5, CSS3, AJAX, SCSS",
+        "items": [
+          "Populated site content and adjusted images and alignment",
+          "Set up the site to match the mock-up, plus shipping and payment accounts",
+          "Configured the admin store with product, order and invoice settings",
+          "Developed multiple shipping with personalized messages",
+          "Styled the bulk order script with SCSS",
+          "Created a bulk order template with manipulation options using PHP",
+          "Developed RESTful web services to manipulate dynamic JSON datasets using AJAX calls",
+          "Optimized server code using PHP and expanded the existing MVC model"
+        ],
+        "links": []
+      },
+      {
+        "name": "Other work",
+        "period": "",
+        "url": "",
+        "description": "Client-requested changes such as upgrading navigation menus to mega menus and updating site themes.",
+        "skills": "Magento, HTML5, CSS3, AJAX, MySQL",
+        "items": [],
+        "links": [
+          {
+            "text": "Mega menu — Batmans Hill",
+            "url": "http://www.batmanshill.com.au/dev-2017/"
+          },
+          {
+            "text": "Mega menu — Sofas Direct",
+            "url": "http://www.sofasdirect.com.au/"
+          },
+          {
+            "text": "Theme upgrade fixes — Organic Crew",
+            "url": "https://organiccrew.com.au/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "role": "Manual Tester",
+    "company": "iChip",
+    "period": "June 2015 – September 2015",
+    "skills": "",
+    "responsibilities": [],
+    "projects": [
+      {
+        "name": "8HourJobs",
+        "period": "",
+        "url": "http://www.8hourjobs.com.au/",
+        "description": "A job site where job seekers apply for jobs across industries and employers post vacancies.",
+        "skills": "GitHub, Quality Center, Microsoft Test Manager",
+        "items": [
+          "Tested a web application using both manual and automated testing",
+          "Designed and executed automation scripts using Selenium WebDriver",
+          "Executed test cases validating functionality and transactions in HP Quality Center",
+          "Used test frameworks like JUnit/Java",
+          "Prepared test scenarios, traceability matrices and summary reports",
+          "Performed UAT regression testing after defects were fixed",
+          "Documented defects in Quality Center and assigned them to developers",
+          "Applied white, black and gray box, unit, integration, regression, usability, performance, scalability, stress and functional testing",
+          "Practised Agile methodology"
+        ],
+        "links": []
+      }
+    ]
+  },
+  {
+    "role": "Manual Tester",
+    "company": "CPA Australia",
+    "period": "March 2013 – July 2013",
+    "skills": "",
+    "responsibilities": [],
+    "projects": [
+      {
+        "name": "Member First",
+        "period": "",
+        "url": "https://www.cpaaustralia.com.au",
+        "description": "A client relationship management system covering event creation, foundation, professional, product pricing, billing and payments. An SOA layer handled communication between Microsoft Dynamics CRM and client applications.",
+        "skills": "MVC, .NET, CRM, TFS, MTM",
+        "items": [
+          "Wrote test cases from user stories and reviewed test cases",
+          "Wrote, updated and executed test cases and raised defects using MTM and TFS",
+          "Executed integration test cases in SIT, plus functional and regression testing",
+          "Resolved issues quickly by working with developers",
+          "Gathered requirements with the business analyst when unclear",
+          "Conducted compatibility testing across browsers and platforms",
+          "Attended daily stand-ups and status meetings",
+          "Practised Agile (Kanban) methodology"
+        ],
+        "links": []
+      }
+    ]
+  },
+  {
+    "role": "Web Developer",
+    "company": "PlusPointGrafix",
+    "period": "June 2011 – July 2012",
+    "skills": "",
+    "responsibilities": [],
+    "projects": [
+      {
+        "name": "Loxo",
+        "period": "",
+        "url": "http://loxo.com.au",
+        "description": "Website designed and developed for a builder located in Dandenong.",
+        "skills": "HTML, CSS, Photoshop",
+        "items": [
+          "Designed and developed the website",
+          "Customized the template",
+          "Used Bootstrap and typography"
+        ],
+        "links": []
+      },
+      {
+        "name": "MaxiSew",
+        "period": "",
+        "url": "",
+        "description": "Web application for a sewing machine spare parts seller.",
+        "skills": "PHP, MySQL, HTML, CSS, JavaScript",
+        "items": [
+          "Design and development",
+          "Matched spare parts to machine model pictures and PDF user guides",
+          "Spare part locations"
+        ],
+        "links": []
+      }
+    ]
+  },
+  {
+    "role": "Personal Projects",
+    "company": "",
+    "period": "",
+    "skills": "",
+    "responsibilities": [],
+    "projects": [
+      {
+        "name": "Masala Dosa",
+        "period": "",
+        "url": "http://masaladosa.com.au",
+        "description": "Responsive website for an Indian restaurant in Cranbourne.",
+        "skills": "HTML5, CSS3, jQuery, Bootstrap, Parallax scroll, Photoshop",
+        "items": [
+          "Gathered requirements with the client",
+          "Designed and developed the page layout",
+          "Created and edited images in Photoshop",
+          "Used a parallax scrolling effect"
+        ],
+        "links": []
+      },
+      {
+        "name": "MyPortfolio",
+        "period": "",
+        "url": "https://github.com/rudhraraji/myportfolio",
+        "description": "This portfolio — originally built in Ruby on Rails and hosted on Heroku, now rebuilt in React with a Node.js backend. Version controlled on GitHub.",
+        "skills": "React, Node.js, Express, Ruby on Rails, HTML5, CSS3, Photoshop",
+        "items": [],
+        "links": [
+          {
+            "text": "GitHub repository",
+            "url": "https://github.com/rudhraraji/myportfolio"
+          }
+        ]
+      },
+      {
+        "name": "AuctionLights",
+        "period": "",
+        "url": "http://develop.auctionlights.com.au",
+        "description": "Redesign for a client who installs lights for real estate billboards, replacing a manual, hard-to-use site. Built with ASP.NET MVC, MSSQL Server 2016 and Bootstrap following Agile.",
+        "skills": "ASP.NET MVC, HTML5, CSS3, jQuery, Bootstrap, Photoshop",
+        "items": [
+          "Admin users manage the business, process orders and import bulk orders",
+          "View order and billing history; export processed orders for billing",
+          "Admin users add new customers and employees",
+          "Customers order online, view reports and update order status",
+          "Installers view assigned work and update installation status",
+          "Role-based authentication using Areas"
+        ],
+        "links": []
+      }
+    ]
+  }
+]

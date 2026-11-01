@@ -1,32 +1,64 @@
-# README
+# Raji Rudhrakumar — Portfolio (React)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+React + Vite rebuild of the original Ruby on Rails portfolio
+(`rudhraraji/myportfolio`). Same sections and look — Know Me, Skills,
+Education, Experience, Portfolio — with jQuery/Bootstrap replaced by React
+components and plain CSS.
 
-Things you may want to cover:
+## Run locally
 
-* Ruby version: 2.6.10
+```bash
+npm install
+npm run dev
+```
 
-* System dependencies: rbenv, ruby-build, bundler, SQLite (development), PostgreSQL (production)
+## Contact
 
-* Configuration: Use `RAILS_ENV=development` locally and run `bundle install --without production` for dev setup.
+The Contact page provides a tap-to-call link and does not collect or deliver messages.
 
-* Database creation: `bundle exec rake db:create db:migrate` (use PostgreSQL in production or SQLite in development)
+## Admin portal (edit the Experience tab)
 
-* Database initialization: `bundle exec rake db:seed` (if seeds exist)
+1. Add `ADMIN_PASSWORD=...` to `.env` and restart `npm run server`.
+2. Open the site at `#admin` (e.g. http://localhost:5173/#admin) and log in.
+3. Add, edit, reorder or delete jobs and their clients/projects, then click **Save changes**.
 
-* How to run the test suite: `bundle exec rails test`
+Experience is stored in `src/data/experience.json`. The server updates that file on
+save (keeping the previous version in `experience.backup.json`), and the Experience tab
+loads it live from `/api/experience`. A static build (GitHub Pages) shows the copy
+from the last build, so rebuild/redeploy after editing if the site is hosted that way.
 
-* Services (job queues, cache servers, search engines, etc.): none required for local development.
+Production (one Node host such as Render or Railway): `npm install && npm run build`,
+then `npm start` serves both the site and the API. If the site stays on GitHub
+Pages instead, host the server separately, build with
+`VITE_API_URL=https://your-server.example.com`, and set `ALLOWED_ORIGIN` on the server.
 
-* Deployment instructions: install the specified Ruby version, run `bundle install --without production` locally, and use `bundle exec puma -C config/puma.rb` or a Rails-capable host.
+## Build
 
-* ...
+```bash
+npm run build   # outputs static files to dist/
+```
 
-## Setup
+## Deploy to GitHub Pages
 
-1. Install `rbenv` and `ruby-build`.
-2. Run `rbenv install 2.6.10`.
-3. Run `bundle config set path 'vendor/bundle'`.
-4. Run `bundle install`.
-5. Run `bundle exec rails server`.
+```bash
+npm run deploy  # builds and pushes dist/ to the gh-pages branch
+```
+
+Then in the repo: Settings → Pages → Source: `gh-pages` branch.
+Netlify / Vercel also work: build command `npm run build`, output `dist`.
+
+## Editing content
+
+All text, skills, jobs and projects live in `src/data/portfolio.js`.
+Images are in `src/assets/`.
+
+## Structure
+
+```
+src/
+  data/portfolio.js      content
+  components/            Sidebar, Navbar (round tabs), SkillBar, CircleChart, Icons
+  pages/                 Home, Skills, Education, Experience, Portfolio
+  router.js              tiny hash router (#/skills etc.) — no server config needed
+  styles.css
+```

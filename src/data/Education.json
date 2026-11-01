@@ -1,0 +1,18 @@
+[
+  { "year": "2026", "category": "international", "title": "ISTQB Certified Tester Testing with Generative AI (Gen-AI)", "school": "iSQI" },
+  { "year": "2025", "category": "tricentis", "title": "Tricentis Tosca Product Consultant", "school": "Tricentis" },
+  { "year": "2024", "category": "other", "title": "Playwright 101" },
+  { "year": "2022", "category": "tricentis", "title": "qTest Specialist Level 1", "school": "Tricentis" },
+  { "year": "2022", "category": "tricentis", "title": "Automation Engineer Level 1", "school": "Tricentis" },
+  { "year": "2021", "category": "tricentis", "title": "Test Design Specialist Level 1 & Level 2", "school": "Tricentis" },
+  { "year": "2020", "category": "tricentis", "title": "Automation Specialist Level 1 & Level 2", "school": "Tricentis" },
+  { "year": "2020", "category": "tricentis", "title": "Automation Specialist for API", "school": "Tricentis" },
+  { "year": "2020", "category": "degree", "title": "Master of Information Technology", "school": "RMIT University" },
+  { "year": "2015", "category": "international", "title": "ISTQB Certified Tester Foundation Level (CTFL)", "school": "ANZTB" },
+  { "year": "2011", "category": "other", "title": "Diploma of Information Technology (Software Development)", "school": "Holmesglen TAFE", "result": "Distinction (79%)" },
+  { "year": "2009", "category": "other", "title": "Certificate IV in Information Technology (General)", "school": "Holmesglen TAFE", "result": "High Distinction (89%)" },
+  { "year": "2007", "category": "other", "title": "Certificate II in Business", "school": "AMES" },
+  { "year": "2002", "category": "degree", "title": "Master of Computer Science", "school": "Bharathidasan University, India", "result": "First Class" },
+  { "year": "2000", "category": "degree", "title": "Bachelor of Mathematics", "school": "Bharathiyar University, India", "result": "First Class" }
+]
+
