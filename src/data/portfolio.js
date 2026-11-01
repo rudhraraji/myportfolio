@@ -14,12 +14,12 @@ import auctionlights from '../assets/projects/auctionlights.jpg';
 
 export const profile = {
   name: 'Raji Rudhrakumar',
-  title: 'Automation Engineer',
+  title: 'Senior Test Analyst - Automation & AI',
   photo,
   email: 'rajirudhrakumar@gmail.com',
   phone: '0421 355 709',
   phoneIntl: '+61421355709',
-  location: 'Melbourne',
+  location: 'Melbourne CBD',
   workingAt: 'Looking for a new role',
   linkedin: 'https://www.linkedin.com/in/rajirudhrakumar',
   github: 'https://github.com/rudhraraji/myportfolio',
@@ -27,21 +27,22 @@ export const profile = {
 
 // Key skills from the Skills table in my resume.
 export const rotatingSkills = [
-  'Playwright', 'Tricentis Tosca', 'Selenium WebDriver', 'Appium', 'REST Assured',
+  'Playwright', 'Tricentis Tosca','Appium', 'Selenium WebDriver', 'REST Assured',
   'Postman', 'API Testing', 'Java', 'JavaScript', 'SQL', 'Cucumber (BDD)',
   'Mobile Testing', 'Salesforce', 'Jira', 'Accessibility Testing', 'Agile',
 ];
 
 // From the Summary and Experience sections of my resume.
 export const intro = [
-  'I am a Senior Hybrid Test Analyst with 8+ years of experience in manual, automation, API, mobile, and Salesforce testing across banking, insurance, healthcare, and enterprise applications.',
-  'I am skilled in Playwright, Tricentis Tosca, Selenium, Appium, REST Assured, Postman, Java, SQL, and Agile delivery, covering functional, regression, integration, end-to-end, accessibility (WCAG 2.1 AA), and cross-browser testing.',
-  'I build automation frameworks, improve test coverage, and support high-quality software releases. Recently I built a Postman API automation framework that cut API testing effort by 70%, and an end-to-end Playwright framework for web UI testing.',
+'Senior Test Analyst with 8+ years of IT experience and a strong foundation in web development, software quality assurance, and test automation. Extensive hands-on experience in manual, automation, API, mobile, and Salesforce testing across banking, insurance, healthcare, and enterprise applications.',
+'Practical expertise in functional, regression, integration, end-to-end, cross-browser, and accessibility (WCAG 2.1 AA) testing using Playwright, Tricentis Tosca, Selenium, Appium, REST Assured, and Postman. Proficient in Java, C#, JavaScript, TypeScript, and SQL, with experience delivering quality outcomes in Agile environments.',
+'ISTQB Certified in Generative AI, actively developing expertise in AI-driven test automation using GitHub Copilot, AI agents, Playwright MCP, and LLM-based testing. Focused on leveraging practical testing experience, development knowledge, and emerging AI technologies to improve test coverage, efficiency, and software quality.'
 ];
 
 // Skills tab: the categories and tools from the Skills table in my resume.
 export const skillGroups = [
   { label: 'Test Automation', color: '#D64747', skills: ['Playwright', 'Appium', 'Tricentis Tosca', 'Selenium WebDriver', 'REST Assured'] },
+  { label: 'AI Agents & Tools', color: '#6c4ad6', skills: ['GitHub Copilot', 'Claude', 'Cursor', 'Playwright MCP', 'AI Agents', 'LLM-based Testing', 'Prompt Engineering'] },
   { label: 'API', color: '#FF681F', skills: ['Postman', 'Swagger (Open API)', 'REST API Testing', 'API Automation', 'JSON', 'XML'] },
   { label: 'Programming', color: '#3a89c9', skills: ['Java', 'JavaScript', 'C#', 'SQL', 'HTML', 'CSS', 'PHP'] },
   { label: 'Automation Frameworks', color: '#3ac942', skills: ['JUnit', 'TestNG', 'Cucumber (BDD)', 'Page Object Model (POM)', 'Maven'] },
@@ -57,6 +58,7 @@ export const skillGroups = [
 // Experience now lives in experience.json (edited from the admin portal at #admin).
 
 export const portfolio = [
+  { name: 'Portfolio (React)', url: 'https://github.com/rudhraraji/myportfolio', image: portfolioReact },
   { name: 'Masala Dosa', url: 'http://masaladosa.com.au', image: masaladosa },
   { name: 'Interhampers', url: 'https://store.interhampers.com.au', image: interhampers },
   { name: 'Tile Rescue', url: 'http://www.forster.tilerescue.com.au', image: tilerescue },
