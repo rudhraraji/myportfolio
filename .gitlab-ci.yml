@@ -1,0 +1,76 @@
+# GitLab CI/CD for the portfolio, deploying to Vercel.
+#   - Every push and merge request: install and build, so a broken change fails early.
+#   - Merge requests: deploy a Vercel preview.
+#   - Pushes to the default branch (master): deploy to production.
+#
+# Needs these CI/CD variables (Settings > CI/CD > Variables):
+#   VERCEL_TOKEN       a Vercel access token (masked)
+#   VERCEL_ORG_ID      the Vercel team ID
+#   VERCEL_PROJECT_ID  the Vercel project ID
+# Site settings and secrets (Blob token, admin password) stay in Vercel and are pulled at deploy time.
+
+image: node:24
+
+stages:
+  - build
+  - deploy
+
+variables:
+  VERCEL_CLI: vercel@65.9.0
+  npm_config_cache: $CI_PROJECT_DIR/.npm
+
+cache:
+  key:
+    files:
+      - package-lock.json
+  paths:
+    - .npm/
+
+# Run one pipeline per change: merge request pipelines when an MR is open, branch pipelines otherwise.
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH && $CI_OPEN_MERGE_REQUESTS
+      when: never
+    - if: $CI_COMMIT_BRANCH
+
+build:
+  stage: build
+  script:
+    - npm ci
+    - npm run build
+
+.vercel:
+  stage: deploy
+  needs: [build]
+  before_script:
+    - npm install --global $VERCEL_CLI
+
+deploy_preview:
+  extends: .vercel
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+  script:
+    - vercel pull --yes --environment=preview --token=$VERCEL_TOKEN
+    - vercel build --token=$VERCEL_TOKEN
+    - vercel deploy --prebuilt --token=$VERCEL_TOKEN | tee deploy-url.txt
+    - echo "DEPLOY_URL=$(tail -n 1 deploy-url.txt)" >> deploy.env
+  artifacts:
+    reports:
+      dotenv: deploy.env
+  environment:
+    name: preview/$CI_COMMIT_REF_SLUG
+    url: $DEPLOY_URL
+
+deploy_production:
+  extends: .vercel
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  resource_group: production
+  script:
+    - vercel pull --yes --environment=production --token=$VERCEL_TOKEN
+    - vercel build --prod --token=$VERCEL_TOKEN
+    - vercel deploy --prebuilt --prod --token=$VERCEL_TOKEN
+  environment:
+    name: production
+    url: https://rajirudhrakumar.vercel.app
