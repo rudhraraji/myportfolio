@@ -46,8 +46,11 @@ npm run build   # outputs static files to dist/
 - merge requests get a Vercel preview deploy;
 - pushes to `master` deploy to production (https://rajirudhrakumar.vercel.app).
 
-To deploy, push to GitLab: `git push gitlab master`.
-The pipeline needs the CI/CD variables `VERCEL_TOKEN`, `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID`.
+To deploy, push to GitHub: `.github/workflows/mirror-to-gitlab.yml` copies `master`
+to GitLab, and GitLab's pipeline deploys it. (Pushing to GitLab directly also deploys.)
+The GitHub workflow needs the repository secret `GITLAB_TOKEN` (a GitLab personal access
+token with `write_repository`); the GitLab pipeline needs the CI/CD variables
+`VERCEL_TOKEN`, `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID`.
 
 ## Deploy to GitHub Pages
 

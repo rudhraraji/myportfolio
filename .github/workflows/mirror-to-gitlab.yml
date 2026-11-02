@@ -1,0 +1,35 @@
+# Copies master to GitLab after every push to GitHub.
+# GitLab's pipeline (.gitlab-ci.yml) then builds the site and deploys it to Vercel.
+#
+# Needs a repository secret named GITLAB_TOKEN: a GitLab personal access token
+# with the write_repository scope (GitHub: Settings > Secrets and variables > Actions).
+
+name: Mirror to GitLab
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+# One copy at a time, in push order.
+concurrency:
+  group: gitlab-mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # full history, so GitLab gets every commit
+
+      - name: Push master to GitLab
+        env:
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+        run: |
+          if [ -z "$GITLAB_TOKEN" ]; then
+            echo "::error::The GITLAB_TOKEN secret is missing. Add it under Settings > Secrets and variables > Actions."
+            exit 1
+          fi
+          git push "https://oauth2:${GITLAB_TOKEN}@gitlab.com/rudhraraji/myportfolio.git" HEAD:refs/heads/master

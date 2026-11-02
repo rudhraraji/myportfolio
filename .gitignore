@@ -5,8 +5,5 @@ server/messages.log
 src/data/experience.backup.json
 src/data/experience.json.tmp
 server/uploads
-
 .vercel
 .env*
-!.env.example
-!.env.ghpages
