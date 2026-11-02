@@ -5,7 +5,7 @@
 import { readFile as fsRead, writeFile as fsWrite, rename, copyFile, mkdir, unlink } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
-import { put, get, del, BlobPreconditionFailedError } from '@vercel/blob';
+import { put, get, head, del, BlobPreconditionFailedError, BlobNotFoundError } from '@vercel/blob';
 
 export class Conflict extends Error {}
 
@@ -53,8 +53,17 @@ function blobStorage() {
   return {
     kind: 'Vercel Blob',
     async readJSON(name) {
+      // The version comes from head(), not the download: the download's ETag header can differ
+      // from the one put({ ifMatch }) checks (e.g. a weak tag on a compressed response), which
+      // made every save fail as a conflict. head() runs first, so a save made in between still
+      // shows up as a conflict and is retried.
+      let meta;
+      try { meta = await head(jsonKey(name), opts); } catch (err) {
+        if (err instanceof BlobNotFoundError) return null;
+        throw err;
+      }
       const r = await read(jsonKey(name));
-      return r ? { data: JSON.parse(r.buffer.toString('utf8')), version: r.etag } : null;
+      return r ? { data: JSON.parse(r.buffer.toString('utf8')), version: meta.etag } : null;
     },
     // `version` (from readJSON) makes the write fail with Conflict if someone saved in between.
     async writeJSON(name, data, version) {

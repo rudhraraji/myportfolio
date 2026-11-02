@@ -247,7 +247,10 @@ const safeHtml = (html) => html
   .replace(/\ssrc="([^"]*)"/g, (m, url) => (/^data:image\/(png|jpe?g|gif|webp);/i.test(url) ? m : ''))
   .replace(/<a id="[^"]*"><\/a>/g, '') // empty bookmark anchors from Word
   .replace(/<a\s/g, '<a target="_blank" rel="noopener noreferrer" ')
-  .replace(/\t+/g, '<span class="doc-tab"></span>'); // Word tab stops (e.g. "Job title    Dates")
+  .replace(/\t+/g, '<span class="doc-tab"></span>') // Word tab stops (e.g. "Job title    Dates")
+  // "Left <tab>|<tab> Right" lines (e.g. "Email: …  |  Mobile: …"): show the two parts at opposite edges.
+  .replace(/<p>((?:(?!<\/?p>)[\s\S])*?)\s*(?:<span class="doc-tab"><\/span>\s*)+\|\s*(?:<span class="doc-tab"><\/span>\s*)+((?:(?!<\/?p>)[\s\S])*?)<\/p>/g,
+    (_m, left, right) => `<p class="doc-split"><span>${left.trim()}</span><span>${right.trim()}</span></p>`);
 const DOCX_STYLES = ["p[style-name='List Paragraph'] => ul > li:fresh"];
 
 app.get('/api/resume/content', async (_req, res) => {

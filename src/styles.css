@@ -333,6 +333,8 @@ blockquote p { margin: 0 0 .8em; }
 }
 .resume-doc h4, .resume-doc h5, .resume-doc h6 { font-size: 14px; margin: 12px 0 4px; }
 .resume-doc .doc-tab { display: inline-block; width: 2.5em; }
+.resume-doc .doc-split { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px 24px; }
+.resume-doc .doc-split > :last-child { text-align: right; }
 .resume-doc p { margin: 0 0 8px; }
 .resume-doc ul, .resume-doc ol { margin: 0 0 10px; padding-left: 22px; }
 .resume-doc li { margin-bottom: 3px; }
