@@ -36,9 +36,9 @@ export const rotatingSkills = [
 
 // From the Summary and Experience sections of my resume.
 export const intro = [
-'Senior Test Analyst with 8+ years of IT experience and a strong foundation in web development, software quality assurance, and test automation. Extensive hands-on experience in manual, automation, API, mobile, and Salesforce testing across banking, insurance, healthcare, and enterprise applications.',
-'Practical expertise in functional, regression, integration, end-to-end, cross-browser, and accessibility (WCAG 2.1 AA) testing using Playwright, Tricentis Tosca, Selenium, Appium, REST Assured, and Postman. Proficient in Java, C#, JavaScript, TypeScript, and SQL, with experience delivering quality outcomes in Agile environments.',
-'ISTQB Certified in Generative AI, actively developing expertise in AI-driven test automation using GitHub Copilot, AI agents, Playwright MCP, and LLM-based testing. Focused on leveraging practical testing experience, development knowledge, and emerging AI technologies to improve test coverage, efficiency, and software quality.'
+'Senior Test Analyst with 8+ years of IT experience in manual, automation, API, mobile and Salesforce testing across banking, insurance, healthcare and enterprise applications.' 
+'Skilled in Playwright, Tricentis Tosca, Selenium, Appium, REST Assured and Postman, with programming proficiency in Java, C#, JavaScript, TypeScript and SQL, and experience with accessibility testing (WCAG 2.1 AA) in Agile teams.'
+'ISTQB Certified in Generative AI, currently applying GitHub Copilot, AI agents, Playwright MCP and LLM-based testing to improve test coverage, efficiency and software quality.'
 ];
 
 // Skills tab: the categories and tools from the Skills table in my resume.
