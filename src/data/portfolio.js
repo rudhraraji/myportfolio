@@ -36,7 +36,7 @@ export const rotatingSkills = [
 
 // From the Summary and Experience sections of my resume.
 export const intro = [
-'Senior Test Analyst with 8+ years of IT experience in manual, automation, API, mobile and Salesforce testing across banking, insurance, healthcare and enterprise applications.',
+'Senior Test Analyst with 8+ years of IT experience in manual, automation, API, mobile and Salesforce testing across superannuation, insurance, healthcare and enterprise applications.',
 'Skilled in Playwright, Tricentis Tosca, Selenium, Appium, REST Assured and Postman, with programming proficiency in Java, C#, JavaScript, TypeScript and SQL, and experience with accessibility testing (WCAG 2.1 AA) in Agile teams.',
 'ISTQB Certified in Generative AI, currently applying GitHub Copilot, AI agents, Playwright MCP and LLM-based testing to improve test coverage, efficiency and software quality.'
 ];

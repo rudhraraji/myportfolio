@@ -12,6 +12,11 @@ npm install
 npm run dev
 ```
 
+### Run on Specific Port
+``` bash
+npm run dev -- --port 5175 --strictPort
+```
+
 ## Contact
 
 The Contact page provides a tap-to-call link and does not collect or deliver messages.
