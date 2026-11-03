@@ -1,4 +1,4 @@
-import { profile, rotatingSkills, intro } from '../data/portfolio.js';
+import { profile, rotatingSkills } from '../data/portfolio.js';
 import { LinkedInIcon, GitHubIcon, PhoneIcon, MailIcon, PinIcon } from '../components/Icons.jsx';
 import { useEffect, useState } from 'react';
 
@@ -28,9 +28,6 @@ export default function Home() {
           <p>Hello, I'm an Automation Engineer </p>
           <RotatingWord />
         </div>
-        <blockquote>
-          {intro.map((p) => <p key={p.slice(0, 20)}>{p}</p>)}
-        </blockquote>
       </section>
 
       <section className="info-grid">
